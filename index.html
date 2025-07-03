@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Emirati Products Week</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      width: 100%;
+      font-family: 'Poppins', Arial, sans-serif;
+      background: url('https://uploads.onecompiler.io/43pk3k7z8/43pk36pb7/Untitled%20design%20(3).png') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: rgba(0,0,0,0.5);
+      z-index: 0;
+    }
+
+     .container {
+      position: relative;
+      background-color: rgba(0, 0, 0, 0.9); /* Slightly transparent black */
+      padding: 3rem 3.5rem;
+      border-radius: 20px;
+      max-width: 100%;
+      width: 100%;
+      z-index: 1;
+      box-shadow: 0 0 30px rgba(255, 215, 0, 0.7);
+      letter-spacing: 0.04em;
+      line-height: 1.6;
+      text-shadow: 0 0 5px rgba(0,0,0,0.6);
+
+      /* Background image for container with full URL */
+      background-image: url('Untitled design (4).png');
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+    }
+
+    /* Logo at top */
+    .logo {
+       width: 320px;
+      border-radius: 50%;
+      border: 3px solid #FFD700;
+      margin-bottom: 0.2rem;
+      box-shadow: 0 0 15px #FFD700;
+      transition: transform 0.3s ease;;
+    }
+    .logo:hover {
+      transform: scale(1.1);
+    }
+
+    .coming-soon {
+      font-style: italic;
+      font-size: 4.2rem;
+      font-weight: 700;
+      color: #FFD700;
+      margin-bottom: 0.3rem;
+      animation: pulse 2s infinite;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 8px #FFD700;
+    }
+
+    @keyframes pulse {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.05); opacity: 0.85; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    .arabic-text {
+      font-size: 3.2rem;
+      letter-spacing: 1px;
+      direction: rtl;
+      margin-bottom: 1.3rem;
+      white-space: nowrap;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+    }
+
+    .main-title {
+        font-style: italic;
+      font-size: 2.4rem;
+      color: #FFD700;
+      margin-bottom: 1.2rem;
+      white-space: nowrap;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-shadow: 0 0 6px rgba(255, 215, 0, 0.8);
+    }
+
+    .uae {
+      color: #0905f3;
+      font-style: italic;
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 1.3rem;
+      letter-spacing: 0.1em;
+      text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
+    }
+
+    .uae span:nth-child(1) { color: red; }
+    .uae span:nth-child(2) { color: rgb(251, 255, 0); }
+    .uae span:nth-child(3) { color: #034113; }
+
+    .highlight {
+      font-style: italic;
+      font-size: 1.6rem;
+      color: #ffff00;
+      margin-bottom: 1.8rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+    }
+
+    .contact-image {
+      width: 130px;
+      border-radius: 50%;
+      border: 3px solid #FFD700;
+      margin-bottom: 1.2rem;
+      box-shadow: 0 0 15px #FFD700;
+      transition: transform 0.3s ease;
+    }
+    .contact-image:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 25px #fff;
+    }
+
+    .contact-details {
+      font-style: italic;
+      font-size: 1.35rem;
+      color: #0905f3;
+      line-height: 1.7;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-shadow: 0 0 4px rgba(13, 178, 219, 0.9);
+      margin-bottom: 1rem;
+    }
+
+    .contact-details strong {
+      font-style: italic;
+      color: white;
+      font-weight: 600;
+    }
+
+    .contact-details1 {
+      color: #ff1e00;
+      margin-top: 0.6rem;
+      font-weight: 500;
+      letter-spacing: 0.03em;
+      text-shadow: 0 0 4px rgba(223, 47, 41, 0.9);
+    }
+
+    .contact-us {
+        font-size: 30px;
+        font-weight: 900;
+        font-style: italic;
+        color: #ffffff;
+    }
+
+    .footer {
+      margin-top: 1.8rem;
+      font-size: 1rem;
+      color: #ccc;
+      letter-spacing: 0.04em;
+    }
+
+    @media (max-width: 600px) {
+      .logo {
+        width: 90px;
+        margin-bottom: 1.5rem;
+      }
+      .coming-soon {
+        font-size: 3rem;
+      }
+      .main-title {
+        font-size: 1.8rem;
+        white-space: nowrap;
+      }
+      .arabic-text {
+        font-size: 1.9rem;
+        white-space: nowrap;
+      }
+      .uae {
+        font-size: 2.1rem;
+      }
+      .highlight {
+        font-size: 1.3rem;
+      }
+      .contact-details {
+        font-size: 1.15rem;
+      }
+      .footer {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <!-- Logo added here -->
+    <img class="logo" src="WhatsApp Image 2025-07-03 at 13.08.48.jpeg" alt="Logo">
+
+    <div class="coming-soon">COMING SOON</div>
+
+    <div class="arabic-text">
+      أسبوع المنتجات الإماراتية الأول في رواندا
+    </div>
+
+    <div class="main-title">
+      1<sup>st</sup> EMIRATI PRODUCTS WEEK IN RWANDA
+    </div>
+
+    <div class="uae">
+      MADE IN <span>U</span> <span>A</span> <span>E</span>
+    </div>
+
+    <div class="highlight">
+      26th to 28th October 2025
+    </div>
+
+    <div class="contact-details">
+       <div class="contact-us"><p>Contact US</p> </div>
+      <p><strong>Phone:</strong> +971 56 860 0311</p>
+      <p><strong>Phone:</strong> +971 50 758 8500</p>
+      <p><strong>Phone:</strong> +971 56 465 8050</p>
+      <div class="contact-details1">
+        <p><strong>Email:</strong> sales@starsexhibitions.com</p>
+        <p><strong>Website:</strong> www.starsexhibitions.com</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      © 2025 STARS TEAM EVENTS
+    </div>
+  </div>
+</body>
+</html>
