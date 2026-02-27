@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Knowledge Articles - StarsTeamEvents</title>
+<meta name="description" content="Explore articles, insights, and trends in games, music, movies, and global entertainment.">
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="manga.css">
+<link rel="stylesheet" href="knowledge.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">StarsTeamEvents</div>
+
+    <div class="menu-toggle" id="menu-toggle">☰</div>
+
+    <nav id="nav-menu">
+        <div class="nav-close" id="nav-close">✕</div>
+        <a href="index.html">Home</a>
+        <a href="manga.html">Manga</a>
+        <a href="movies.html">Movies</a>
+        <a href="series.html">Series</a>
+        <a href="knowledge.html">Knowledge</a>
+        <a href="inquiry.html">Inquiry</a>
+    </nav>
+
+    <div class="nav-overlay" id="nav-overlay"></div>
+</header>
+
+<!-- HERO SECTION -->
+<section class="page-hero">
+    <h1>🧠 Knowledge Hub</h1>
+    <p>Dive into entertainment insights, trends, and industry analysis from around the world.</p>
+</section>
+
+<!-- KNOWLEDGE CATEGORIES -->
+<section class="knowledge-categories">
+    <div class="categories-grid">
+
+        <div class="article-card" data-category="Games">
+            <span>🎮</span>
+            <h3>Games</h3>
+            <p>Game releases, updates & esports highlights</p>
+        </div>
+
+        <div class="article-card" data-category="Music">
+            <span>🎵</span>
+            <h3>Music</h3>
+            <p>Albums, charts & artist comebacks</p>
+        </div>
+
+        <div class="article-card" data-category="People">
+            <span>⭐</span>
+            <h3>People</h3>
+            <p>Actors, idols & creators spotlight</p>
+        </div>
+
+        <div class="article-card" data-category="Awards & Events">
+            <span>🏆</span>
+            <h3>Awards & Events</h3>
+            <p>Ceremonies, festivals & major announcements</p>
+        </div>
+
+        <div class="article-card" data-category="Behind The Scenes">
+            <span>🎨</span>
+            <h3>Behind The Scenes</h3>
+            <p>Production stories, interviews & creative process</p>
+        </div>
+
+        <div class="article-card" data-category="Global Trends">
+            <span>🌏</span>
+            <h3>Global Trends</h3>
+            <p>Worldwide entertainment patterns</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- SEARCH & FILTER SECTION -->
+<section class="manga-section">
+    <div class="manga-controls">
+        <input type="text" id="searchInput" placeholder="Search articles by title...">
+
+        <select id="categoryFilter">
+            <option>All Categories</option>
+            <option>Games</option>
+            <option>Music</option>
+            <option>People</option>
+            <option>Knowledge</option>
+            <option>Awards & Events</option>
+            <option>Behind The Scenes</option>
+            <option>Global Trends</option>
+        </select>
+    </div>
+
+    <!-- ARTICLES GRID -->
+    <div class="manga-grid" id="mangaContainer">
+        <!-- Articles load dynamically here -->
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                Stars Team Events specializes in organizing unforgettable corporate events,
+                exhibitions, and social celebrations across the UAE.
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h3>Links</h3>
+            <a href="index.html">Home</a>
+            <a href="manga.html">Manga</a>
+            <a href="movies.html">Movies</a>
+            <a href="series.html">Series</a>
+            <a href="inquiry.html">Contact</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Support</h3>
+            <a href="support.html">FAQ</a>
+            <a href="support.html">Privacy Policy</a>
+            <a href="support.html">Terms of Use</a>
+            <a href="support.html">Customer Service</a>
+        </div>
+
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Stay updated on our latest insights.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Stars Team Events | All Rights Reserved
+    </div>
+</footer>
+
+<!-- SCRIPTS -->
+<script src="main.js"></script>
+<script src="knowledge.js"></script>
+
+</body>
+</html>

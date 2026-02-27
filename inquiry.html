@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Navigator Hub</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">StarsTeamEvents</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="nav-menu">
+    <div class="nav-close" id="nav-close">✕</div>
+
+    <a href="index.html">Home</a>
+    <a href="articles.html">Articles</a>
+    <a href="job-view.html">Jobs</a>
+    <a href="inquiry.html">Inquiry</a>
+</nav>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+</header>
+
+<!-- HERO -->
+<section class="page-hero">
+    <h1>Contact Navigator Hub</h1>
+    <p>Questions, feedback or business inquiries — we reply within 24 hours</p>
+</section>
+
+<!-- CONTACT INFO -->
+<section class="section contact-info">
+
+    <div class="info-grid">
+
+        <div class="info-card">
+            <h3>📧 Email</h3>
+            <p>starteamsevent@gmail.com</p>
+            <span>Best for business & ads</span>
+        </div>
+
+        <div class="info-card">
+            <h3>⏱ Response Time</h3>
+            <p>Within 24 Hours</p>
+            <span>Usually much faster</span>
+        </div>
+
+        <div class="info-card">
+            <h3>🌍 Topics</h3>
+            <p>Jobs • Articles • Partnerships</p>
+            <span>We read every message</span>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACT FORM -->
+<section class="section contact-section">
+
+<div class="contact-container">
+
+    <div class="contact-text">
+        <h2>Send a Message</h2>
+        <p>If you want to publish jobs, collaborate, or report an issue — use this form.</p>
+    </div>
+
+    <form id="contactForm" class="contact-form">
+
+        <input type="text" id="name" placeholder="Your Name" required>
+
+        <input type="email" id="email" placeholder="Your Email" required>
+
+        <input type="text" id="subject" placeholder="Subject">
+
+        <textarea id="message" rows="6" placeholder="Write your message..." required></textarea>
+
+        <button type="submit" class="btn">Send Message</button>
+
+    </form>
+
+</div>
+</section>
+
+<!-- SUCCESS POPUP -->
+<div class="success-popup" id="successPopup">
+    <div class="popup-box">
+        <h3>Message Ready ✉️</h3>
+        <p>Your email app will open now.</p>
+        <button onclick="closePopup()">OK</button>
+    </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                Stars Team Events specializes in organizing unforgettable corporate events,
+                exhibitions, and social celebrations across the UAE.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+            <h3>Links</h3>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="inquiry.html">Contact</a>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="footer-col">
+            <h3>Support</h3>
+            <a href="support.html">FAQ</a>
+            <a href="support.html">Privacy Policy</a>
+            <a href="support.html">Terms of Use</a>
+            <a href="support.html">Customer Service</a>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Stay updated on our latest events and announcements.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Stars Team Events | All Rights Reserved
+    </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

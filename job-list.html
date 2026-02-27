@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Job Manager - Navigator Hub</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="job-admin.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">StarsTeamEvents</div>
+
+    <div class="menu-toggle" id="menu-toggle">
+        ☰
+    </div>
+
+    <nav id="nav-menu">
+    <div class="nav-close" id="nav-close">✕</div>
+
+    <a href="index.html">Home</a>
+    <a href="articles.html">Articles</a>
+    <a href="job-view.html">Jobs</a>
+    <a href="inquiry.html">Inquiry</a>
+</nav>
+
+<div class="nav-overlay" id="nav-overlay"></div>
+
+</header>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+    <h1>Job Management Panel</h1>
+    <p>Create jobs & manage applicants</p>
+</section>
+
+<!-- POST JOB FORM -->
+<section class="section job-admin-section">
+
+<h2 class="section-title">📝 Post New Job</h2>
+
+<form id="jobForm" class="job-form modern-form">
+
+<div class="form-grid">
+
+    <!-- Job Title -->
+    <div class="input-group">
+        <input type="text" id="title" required>
+        <label>Job Title</label>
+        <span class="input-icon">💼</span>
+    </div>
+
+    <!-- Company -->
+    <div class="input-group">
+        <input type="text" id="company" required>
+        <label>Company Name</label>
+        <span class="input-icon">🏢</span>
+    </div>
+
+    <!-- Category -->
+    <div class="input-group">
+        <select id="category" required>
+            <option value=""></option>
+            <option>IT & Software</option>
+            <option>Design</option>
+            <option>Marketing</option>
+            <option>Media & Content</option>
+            <option>Business</option>
+        </select>
+        <label>Category</label>
+    </div>
+
+    <!-- Job Type -->
+    <div class="input-group">
+        <select id="type" required>
+            <option value=""></option>
+            <option>Full Time</option>
+            <option>Part Time</option>
+            <option>Remote</option>
+            <option>Contract</option>
+        </select>
+        <label>Job Type</label>
+    </div>
+
+    <!-- Experience -->
+    <div class="input-group">
+        <select id="experience" required>
+            <option value=""></option>
+            <option>Intern</option>
+            <option>Junior</option>
+            <option>Mid Level</option>
+            <option>Senior</option>
+        </select>
+        <label>Experience Level</label>
+    </div>
+
+    <!-- Location -->
+    <div class="input-group">
+        <input type="text" id="location" required>
+        <label>Location</label>
+        <span class="input-icon">📍</span>
+    </div>
+
+</div>
+
+<!-- Salary Slider -->
+<div class="salary-section">
+    <label>Salary Range</label>
+    <input type="range" id="salaryRange" min="500" max="10000" step="500">
+    <div class="salary-output">$<span id="salaryValue">5000</span></div>
+</div>
+
+<!-- Remote Toggle -->
+<div class="toggle-section">
+    <span>Remote Available</span>
+    <label class="switch">
+        <input type="checkbox" id="remoteToggle">
+        <span class="slider"></span>
+    </label>
+</div>
+
+<!-- Description -->
+<div class="input-group full-width">
+    <textarea id="description" required></textarea>
+    <label>Job Description</label>
+</div>
+
+<!-- Submit -->
+<div class="form-submit">
+    <button type="button" id="clearBtn" class="publish-btn">Clear</button>
+    <button type="submit" class="publish-btn">Publish Job</button>
+</div>
+
+</form>
+
+</div>
+</section>
+
+
+<!-- JOB LIST -->
+<section class="section dark-section job-list-section">
+
+<h2 class="section-title">📋 Posted Jobs</h2>
+
+<div class="job-admin-card">
+    <div id="adminJobList" class="admin-job-list grid-jobs">
+        <!-- Jobs load here -->
+    </div>
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- ABOUT -->
+        <div class="footer-col">
+            <h3>About Us</h3>
+            <p>
+                Stars Team Events specializes in organizing unforgettable corporate events,
+                exhibitions, and social celebrations across the UAE.
+            </p>
+        </div>
+
+        <!-- LINKS -->
+        <div class="footer-col">
+            <h3>Links</h3>
+            <a href="index.html">Home</a>
+            <a href="events.html">Events</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="inquiry.html">Contact</a>
+        </div>
+
+        <!-- SUPPORT -->
+        <div class="footer-col">
+            <h3>Support</h3>
+            <a href="support.html">FAQ</a>
+            <a href="support.html">Privacy Policy</a>
+            <a href="support.html">Terms of Use</a>
+            <a href="support.html">Customer Service</a>
+        </div>
+
+        <!-- NEWSLETTER -->
+        <div class="footer-col">
+            <h3>Newsletter</h3>
+            <p>Stay updated on our latest events and announcements.</p>
+            <form class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Stars Team Events | All Rights Reserved
+    </div>
+</footer>
+
+<script src="main.js"></script>
+<script src="job-admin.js"></script>
+</body>
+</html>
